@@ -18,6 +18,10 @@ const pokemons = [
 // create a loop that prints all
 // the pokemons from the pokemons array
 // invoke the function to see that it works
+const printPokemons = () => {
+  document.getElementById("app").textContent = `${pokemons}`;
+}
+printPokemons();
 
 // 2)
 // Create an object for the pokemon Pikachu.
