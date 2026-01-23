@@ -27,21 +27,31 @@ printPokemons();
 // Create an object for the pokemon Pikachu.
 // it could have properties such as name, element,
 // strength, color, amountOfLegs or something like that.
-
+let pikachu = {
+  name: "Pikachu",
+  element: "Electricity",
+  strength: 110,
+}
+console.log(pikachu)
 // 3)
 // console.log something like
 // 'Pikachu is a electricity pokemon with the strength of 32'
 // Selecting some of the information about your pikachu object.
-
+let pikachu = {
+  name: "Pikachu",
+  element: "Electricity",
+  strength: 110,
+}
+console.log(`${pikachu.name} is an ${pikachu.element} pokemon with the strength of ${pikachu.strength}`)
 // 4)
 // Add the property stillToCatch: true to the Pikachu object.
-
+pikachu.stillToCatch = true
 // 5)
 // change the value of the key strength in the Pikachu object.
-
+pikachu.strength = 36
 // 6)
 // Delete a property from the Pikachu object.
-
+delete pikachu.strength;
 // 7)
 // Fill up this array with a few more pokemons.
 // It is an array with objects!
@@ -62,8 +72,13 @@ const moreAboutPokemons = [
 
 // 8)
 // Print out all the NAMES of the pokemons in this new array.
-
+moreAboutPokemons.forEach((pokemon) => {
+  console.log(pokemon.name);
+})
 // 9)
 // Print out something like
 // 'Bulbasaur is a water pokemon with the strength of 32'
 // Do this for all the pokemons.
+moreAboutPokemons.forEach((pokemon) => {
+  console.log(`${pokemon.name} is a ${pokemon.element} pokemon with the strength of ${pokemon.strength}`);
+});
